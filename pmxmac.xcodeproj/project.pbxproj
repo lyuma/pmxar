@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD120ED8209D37F5002B5A35 /* PmdPmxConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD120ED6209D37F5002B5A35 /* PmdPmxConverter.cpp */; };
+		CD39F223202FBC8000222593 /* ViewController+SCNSceneRendererDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD39F222202FBC7F00222593 /* ViewController+SCNSceneRendererDelegate.swift */; };
+		CD39F225202FD2D900222593 /* vmd in Resources */ = {isa = PBXBuildFile; fileRef = CD39F224202FD2D800222593 /* vmd */; };
+		CD39F228202FD9B900222593 /* MMDMotionLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD39F227202FD9B900222593 /* MMDMotionLoader.mm */; };
+		CD39F2F220342D8E00222593 /* libLinearMath_xcode4_x64_debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD39F2E42034238C00222593 /* libLinearMath_xcode4_x64_debug.a */; };
+		CD39F2F320342D9300222593 /* libBulletCollision_xcode4_x64_debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD39F2EA2034239F00222593 /* libBulletCollision_xcode4_x64_debug.a */; };
+		CD39F2F420342D9600222593 /* libBulletDynamics_xcode4_x64_debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD39F2F0203423A400222593 /* libBulletDynamics_xcode4_x64_debug.a */; };
+		CD39F2F520342D9900222593 /* libBussIK_xcode4_x64_debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD39F2DE203408E600222593 /* libBussIK_xcode4_x64_debug.a */; };
+		CD61BC26201D57F700D48109 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD61BC25201D57F700D48109 /* Utilities.swift */; };
+		CDB49E562017478800585481 /* MMDPmxParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDB49E552017478800585481 /* MMDPmxParser.cpp */; };
+		CDB49E582017562100585481 /* MMDGeometryLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = CDB49E572017562100585481 /* MMDGeometryLoader.mm */; };
+		CDDDE4F9201DFEAF00FE01DB /* pmx in Resources */ = {isa = PBXBuildFile; fileRef = CDDDE4F8201DFEAF00FE01DB /* pmx */; };
+		CDDDE509201DFEE300FE01DB /* VirtualObjectLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDDE4FD201DFEE200FE01DB /* VirtualObjectLoader.swift */; };
+		CDDDE50B201DFEE300FE01DB /* VirtualObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDDE4FF201DFEE300FE01DB /* VirtualObject.swift */; };
+		CDDDE50C201DFEE300FE01DB /* VirtualObjectInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDDE500201DFEE300FE01DB /* VirtualObjectInteraction.swift */; };
+		CDDDE50E201DFEE300FE01DB /* ViewController+ObjectSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDDE502201DFEE300FE01DB /* ViewController+ObjectSelection.swift */; };
+		CDE19815205ABABC003ACD81 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDE19814205ABABC003ACD81 /* Info.plist */; };
+		CDE993FA205A5DC6006795F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE993F9205A5DC6006795F5 /* ViewController.swift */; };
+		CDE993FE205A6F40006795F5 /* MacVirtualObjectSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE993FD205A6F40006795F5 /* MacVirtualObjectSelection.swift */; };
+		CDE99402205A705C006795F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE99401205A705C006795F5 /* Assets.xcassets */; };
+		CDE99407205A73AD006795F5 /* floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDE99406205A73AD006795F5 /* floor.jpg */; };
+		CDE9940B205A7B0D006795F5 /* MacAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE9940A205A7B0D006795F5 /* MacAppDelegate.swift */; };
+		CDE9944B205A97C0006795F5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE9944A205A97C0006795F5 /* MainMenu.xib */; };
+		CDE9944D205A9967006795F5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE9944C205A9967006795F5 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD39F2DD203408E600222593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD39F2D9203408E500222593 /* BussIK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 51AB61DC700444E87DC07F24;
+			remoteInfo = BussIK;
+		};
+		CD39F2E32034238C00222593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD39F2DF2034238C00222593 /* LinearMath.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 610E0C5F48D332FB35D276CD;
+			remoteInfo = LinearMath;
+		};
+		CD39F2E92034239F00222593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD39F2E52034239F00222593 /* BulletCollision.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0751046462DC167E613620FB;
+			remoteInfo = BulletCollision;
+		};
+		CD39F2EF203423A400222593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD39F2EB203423A400222593 /* BulletDynamics.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7C8C03527CAA263D27DB4C08;
+			remoteInfo = BulletDynamics;
+		};
+		CD39F2F620342DBE00222593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD39F2D9203408E500222593 /* BussIK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F8A0199140171247F5B3974;
+			remoteInfo = BussIK;
+		};
+		CD39F2F820342DC100222593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD39F2DF2034238C00222593 /* LinearMath.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 184106934F5B793C694145C4;
+			remoteInfo = LinearMath;
+		};
+		CD39F2FA20342DC500222593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD39F2E52034239F00222593 /* BulletCollision.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 05A7237C37D45B215FC26AAB;
+			remoteInfo = BulletCollision;
+		};
+		CD39F2FC20342DC800222593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD39F2EB203423A400222593 /* BulletDynamics.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DCA50EA6BB07AC05F703304;
+			remoteInfo = BulletDynamics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD120ED5209D32A5002B5A35 /* MMDPmdParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDPmdParser.h; sourceTree = "<group>"; };
+		CD120ED6209D37F5002B5A35 /* PmdPmxConverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PmdPmxConverter.cpp; sourceTree = "<group>"; };
+		CD120ED7209D37F5002B5A35 /* PmdPmxConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PmdPmxConverter.h; sourceTree = "<group>"; };
+		CD39F222202FBC7F00222593 /* ViewController+SCNSceneRendererDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SCNSceneRendererDelegate.swift"; sourceTree = "<group>"; };
+		CD39F224202FD2D800222593 /* vmd */ = {isa = PBXFileReference; lastKnownFileType = folder; path = vmd; sourceTree = "<group>"; };
+		CD39F226202FD9B800222593 /* MMDMotionLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDMotionLoader.h; sourceTree = "<group>"; };
+		CD39F227202FD9B900222593 /* MMDMotionLoader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MMDMotionLoader.mm; sourceTree = "<group>"; };
+		CD39F2D9203408E500222593 /* BussIK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BussIK.xcodeproj; path = submodules/bullet3/build3/xcode4/BussIK.xcodeproj; sourceTree = "<group>"; };
+		CD39F2DF2034238C00222593 /* LinearMath.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LinearMath.xcodeproj; path = submodules/bullet3/build3/xcode4/LinearMath.xcodeproj; sourceTree = "<group>"; };
+		CD39F2E52034239F00222593 /* BulletCollision.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BulletCollision.xcodeproj; path = submodules/bullet3/build3/xcode4/BulletCollision.xcodeproj; sourceTree = "<group>"; };
+		CD39F2EB203423A400222593 /* BulletDynamics.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BulletDynamics.xcodeproj; path = submodules/bullet3/build3/xcode4/BulletDynamics.xcodeproj; sourceTree = "<group>"; };
+		CD61BC20201D566600D48109 /* pmxar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pmxar-Bridging-Header.h"; sourceTree = "<group>"; };
+		CD61BC25201D57F700D48109 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		CDB49E512017478700585481 /* MMDCpp14.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDCpp14.h; sourceTree = "<group>"; };
+		CDB49E532017478800585481 /* MMDPmxParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDPmxParser.h; sourceTree = "<group>"; };
+		CDB49E542017478800585481 /* MMDVmdParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDVmdParser.h; sourceTree = "<group>"; };
+		CDB49E552017478800585481 /* MMDPmxParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MMDPmxParser.cpp; sourceTree = "<group>"; };
+		CDB49E572017562100585481 /* MMDGeometryLoader.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MMDGeometryLoader.mm; sourceTree = "<group>"; };
+		CDB49E5B2017623400585481 /* MMDGeometryLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDGeometryLoader.h; sourceTree = "<group>"; };
+		CDDDE4F8201DFEAF00FE01DB /* pmx */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pmx; sourceTree = "<group>"; };
+		CDDDE4FD201DFEE200FE01DB /* VirtualObjectLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectLoader.swift; sourceTree = "<group>"; };
+		CDDDE4FF201DFEE300FE01DB /* VirtualObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObject.swift; sourceTree = "<group>"; };
+		CDDDE500201DFEE300FE01DB /* VirtualObjectInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectInteraction.swift; sourceTree = "<group>"; };
+		CDDDE502201DFEE300FE01DB /* ViewController+ObjectSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+ObjectSelection.swift"; sourceTree = "<group>"; };
+		CDE19814205ABABC003ACD81 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = mac/Info.plist; sourceTree = "<group>"; };
+		CDE993F9205A5DC6006795F5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDE993FD205A6F40006795F5 /* MacVirtualObjectSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacVirtualObjectSelection.swift; sourceTree = "<group>"; };
+		CDE99401205A705C006795F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDE99406205A73AD006795F5 /* floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = floor.jpg; path = Resources/floor.jpg; sourceTree = SOURCE_ROOT; };
+		CDE9940A205A7B0D006795F5 /* MacAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacAppDelegate.swift; sourceTree = "<group>"; };
+		CDE9944A205A97C0006795F5 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		CDE9944C205A9967006795F5 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		CDFDCC72201595210060824B /* pmxmac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pmxmac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDFDCC6F201595210060824B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD39F2F520342D9900222593 /* libBussIK_xcode4_x64_debug.a in Frameworks */,
+				CD39F2F420342D9600222593 /* libBulletDynamics_xcode4_x64_debug.a in Frameworks */,
+				CD39F2F320342D9300222593 /* libBulletCollision_xcode4_x64_debug.a in Frameworks */,
+				CD39F2F220342D8E00222593 /* libLinearMath_xcode4_x64_debug.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD39F2DA203408E500222593 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD39F2DE203408E600222593 /* libBussIK_xcode4_x64_debug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD39F2E02034238C00222593 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD39F2E42034238C00222593 /* libLinearMath_xcode4_x64_debug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD39F2E62034239F00222593 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD39F2EA2034239F00222593 /* libBulletCollision_xcode4_x64_debug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD39F2EC203423A400222593 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD39F2F0203423A400222593 /* libBulletDynamics_xcode4_x64_debug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD39F2F120342D8E00222593 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDFDCC69201595210060824B = {
+			isa = PBXGroup;
+			children = (
+				CD39F2D9203408E500222593 /* BussIK.xcodeproj */,
+				CD39F2DF2034238C00222593 /* LinearMath.xcodeproj */,
+				CD39F2E52034239F00222593 /* BulletCollision.xcodeproj */,
+				CD39F2EB203423A400222593 /* BulletDynamics.xcodeproj */,
+				CDFDCC75201595210060824B /* Resources */,
+				CDFDCC74201595210060824B /* src */,
+				CDFDCC73201595210060824B /* Products */,
+				CD39F2F120342D8E00222593 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CDFDCC73201595210060824B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDCC72201595210060824B /* pmxmac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDFDCC74201595210060824B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CD120ED6209D37F5002B5A35 /* PmdPmxConverter.cpp */,
+				CD120ED7209D37F5002B5A35 /* PmdPmxConverter.h */,
+				CDE9940A205A7B0D006795F5 /* MacAppDelegate.swift */,
+				CDE993FD205A6F40006795F5 /* MacVirtualObjectSelection.swift */,
+				CDE993F9205A5DC6006795F5 /* ViewController.swift */,
+				CDDDE502201DFEE300FE01DB /* ViewController+ObjectSelection.swift */,
+				CD39F222202FBC7F00222593 /* ViewController+SCNSceneRendererDelegate.swift */,
+				CDDDE4FF201DFEE300FE01DB /* VirtualObject.swift */,
+				CDDDE500201DFEE300FE01DB /* VirtualObjectInteraction.swift */,
+				CDDDE4FD201DFEE200FE01DB /* VirtualObjectLoader.swift */,
+				CD61BC25201D57F700D48109 /* Utilities.swift */,
+				CDB49E512017478700585481 /* MMDCpp14.h */,
+				CD120ED5209D32A5002B5A35 /* MMDPmdParser.h */,
+				CDB49E552017478800585481 /* MMDPmxParser.cpp */,
+				CDB49E532017478800585481 /* MMDPmxParser.h */,
+				CDB49E542017478800585481 /* MMDVmdParser.h */,
+				CDB49E572017562100585481 /* MMDGeometryLoader.mm */,
+				CDB49E5B2017623400585481 /* MMDGeometryLoader.h */,
+				CD39F227202FD9B900222593 /* MMDMotionLoader.mm */,
+				CD39F226202FD9B800222593 /* MMDMotionLoader.h */,
+				CD61BC20201D566600D48109 /* pmxar-Bridging-Header.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		CDFDCC75201595210060824B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CDE19814205ABABC003ACD81 /* Info.plist */,
+				CDDDE4F8201DFEAF00FE01DB /* pmx */,
+				CDE9944C205A9967006795F5 /* ViewController.xib */,
+				CDE9944A205A97C0006795F5 /* MainMenu.xib */,
+				CDE99406205A73AD006795F5 /* floor.jpg */,
+				CDE99401205A705C006795F5 /* Assets.xcassets */,
+				CD39F224202FD2D800222593 /* vmd */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDFDCC71201595210060824B /* pmxmac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDFDCC8A201595210060824B /* Build configuration list for PBXNativeTarget "pmxmac" */;
+			buildPhases = (
+				CDFDCC6E201595210060824B /* Sources */,
+				CDFDCC6F201595210060824B /* Frameworks */,
+				CDFDCC70201595210060824B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD39F2F920342DC100222593 /* PBXTargetDependency */,
+				CD39F2FB20342DC500222593 /* PBXTargetDependency */,
+				CD39F2FD20342DC800222593 /* PBXTargetDependency */,
+				CD39F2F720342DBE00222593 /* PBXTargetDependency */,
+			);
+			name = pmxmac;
+			productName = pmxmac;
+			productReference = CDFDCC72201595210060824B /* pmxmac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDFDCC6A201595210060824B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					CDFDCC71201595210060824B = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CDFDCC6D201595210060824B /* Build configuration list for PBXProject "pmxmac" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDFDCC69201595210060824B;
+			productRefGroup = CDFDCC73201595210060824B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CD39F2E62034239F00222593 /* Products */;
+					ProjectRef = CD39F2E52034239F00222593 /* BulletCollision.xcodeproj */;
+				},
+				{
+					ProductGroup = CD39F2EC203423A400222593 /* Products */;
+					ProjectRef = CD39F2EB203423A400222593 /* BulletDynamics.xcodeproj */;
+				},
+				{
+					ProductGroup = CD39F2DA203408E500222593 /* Products */;
+					ProjectRef = CD39F2D9203408E500222593 /* BussIK.xcodeproj */;
+				},
+				{
+					ProductGroup = CD39F2E02034238C00222593 /* Products */;
+					ProjectRef = CD39F2DF2034238C00222593 /* LinearMath.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				CDFDCC71201595210060824B /* pmxmac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CD39F2DE203408E600222593 /* libBussIK_xcode4_x64_debug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBussIK_xcode4_x64_debug.a;
+			remoteRef = CD39F2DD203408E600222593 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD39F2E42034238C00222593 /* libLinearMath_xcode4_x64_debug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLinearMath_xcode4_x64_debug.a;
+			remoteRef = CD39F2E32034238C00222593 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD39F2EA2034239F00222593 /* libBulletCollision_xcode4_x64_debug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBulletCollision_xcode4_x64_debug.a;
+			remoteRef = CD39F2E92034239F00222593 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD39F2F0203423A400222593 /* libBulletDynamics_xcode4_x64_debug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBulletDynamics_xcode4_x64_debug.a;
+			remoteRef = CD39F2EF203423A400222593 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDFDCC70201595210060824B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD39F225202FD2D900222593 /* vmd in Resources */,
+				CDE9944B205A97C0006795F5 /* MainMenu.xib in Resources */,
+				CDE99402205A705C006795F5 /* Assets.xcassets in Resources */,
+				CDE99407205A73AD006795F5 /* floor.jpg in Resources */,
+				CDE9944D205A9967006795F5 /* ViewController.xib in Resources */,
+				CDDDE4F9201DFEAF00FE01DB /* pmx in Resources */,
+				CDE19815205ABABC003ACD81 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDFDCC6E201595210060824B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD39F223202FBC8000222593 /* ViewController+SCNSceneRendererDelegate.swift in Sources */,
+				CDB49E562017478800585481 /* MMDPmxParser.cpp in Sources */,
+				CDE993FE205A6F40006795F5 /* MacVirtualObjectSelection.swift in Sources */,
+				CDDDE50C201DFEE300FE01DB /* VirtualObjectInteraction.swift in Sources */,
+				CDE9940B205A7B0D006795F5 /* MacAppDelegate.swift in Sources */,
+				CDDDE509201DFEE300FE01DB /* VirtualObjectLoader.swift in Sources */,
+				CDB49E582017562100585481 /* MMDGeometryLoader.mm in Sources */,
+				CDDDE50E201DFEE300FE01DB /* ViewController+ObjectSelection.swift in Sources */,
+				CDE993FA205A5DC6006795F5 /* ViewController.swift in Sources */,
+				CD120ED8209D37F5002B5A35 /* PmdPmxConverter.cpp in Sources */,
+				CDDDE50B201DFEE300FE01DB /* VirtualObject.swift in Sources */,
+				CD39F228202FD9B900222593 /* MMDMotionLoader.mm in Sources */,
+				CD61BC26201D57F700D48109 /* Utilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD39F2F720342DBE00222593 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BussIK;
+			targetProxy = CD39F2F620342DBE00222593 /* PBXContainerItemProxy */;
+		};
+		CD39F2F920342DC100222593 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LinearMath;
+			targetProxy = CD39F2F820342DC100222593 /* PBXContainerItemProxy */;
+		};
+		CD39F2FB20342DC500222593 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BulletCollision;
+			targetProxy = CD39F2FA20342DC500222593 /* PBXContainerItemProxy */;
+		};
+		CD39F2FD20342DC800222593 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BulletDynamics;
+			targetProxy = CD39F2FC20342DC800222593 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CDFDCC88201595210060824B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					MACAPP,
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					submodules/bullet3/examples/ThirdPartyLibs/BussIK,
+					submodules/bullet3/src,
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DMACAPP";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CDFDCC89201595210060824B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					submodules/bullet3/examples/ThirdPartyLibs/BussIK,
+					submodules/bullet3/src,
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_SWIFT_FLAGS = "-DMACAPP";
+				SDKROOT = macosx;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDFDCC8B201595210060824B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L9M32A6BL3;
+				INFOPLIST_FILE = Resources/mac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.lyuma.pmxmac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "src/pmxar-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDFDCC8C201595210060824B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L9M32A6BL3;
+				INFOPLIST_FILE = Resources/mac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.lyuma.pmxmac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "src/pmxar-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDFDCC6D201595210060824B /* Build configuration list for PBXProject "pmxmac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFDCC88201595210060824B /* Debug */,
+				CDFDCC89201595210060824B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDFDCC8A201595210060824B /* Build configuration list for PBXNativeTarget "pmxmac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFDCC8B201595210060824B /* Debug */,
+				CDFDCC8C201595210060824B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDFDCC6A201595210060824B /* Project object */;
+}

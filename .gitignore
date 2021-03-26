@@ -1,0 +1,8 @@
+.xcuserdata
+Resources/pmx
+Resources/vmd
+Resources/Assets.xcassets
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata
+*.xcworkspace
+xcuserdata

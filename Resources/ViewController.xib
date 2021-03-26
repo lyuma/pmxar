@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <plugIn identifier="com.apple.SceneKitIBPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ViewController" customModule="pmxmac" customModuleProvider="target">
+            <connections>
+                <outlet property="addObjectButton" destination="aKm-02-UPz" id="uxW-VY-4ZB"/>
+                <outlet property="sceneView" destination="E6c-py-dvH" id="a05-oF-fr0"/>
+                <outlet property="spinner" destination="3cb-dQ-oXx" id="rnE-Xe-cDE"/>
+                <outlet property="view" destination="RLh-bf-1c3" id="Jta-rY-t7c"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <view id="RLh-bf-1c3">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <sceneView preferredRenderingAPI="2" translatesAutoresizingMaskIntoConstraints="NO" id="E6c-py-dvH">
+                    <rect key="frame" x="0.0" y="48" width="375" height="619"/>
+                </sceneView>
+                <containerView translatesAutoresizingMaskIntoConstraints="NO" id="tnx-rc-95S">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="375" id="1vP-17-lAm"/>
+                        <constraint firstAttribute="height" constant="48" id="z9S-1J-UzK"/>
+                    </constraints>
+                </containerView>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKm-02-UPz">
+                    <rect key="frame" x="163" y="0.0" width="48" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="add" imagePosition="only" alignment="center" alternateImage="addPressed" imageScaling="proportionallyUpOrDown" inset="2" id="rFu-bU-0Ux">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="showVirtualObjectSelectionViewController:" target="-2" id="S56-Am-f7d"/>
+                    </connections>
+                </button>
+                <progressIndicator hidden="YES" wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" displayedWhenStopped="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="3cb-dQ-oXx" customClass="ActivityIndicatorView" customModule="pmxmac" customModuleProvider="target">
+                    <rect key="frame" x="171" y="8" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </progressIndicator>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="tnx-rc-95S" secondAttribute="bottom" id="F1n-pO-Riw"/>
+                <constraint firstItem="E6c-py-dvH" firstAttribute="leading" secondItem="RLh-bf-1c3" secondAttribute="leading" id="UlK-I9-PJk"/>
+                <constraint firstItem="E6c-py-dvH" firstAttribute="top" secondItem="RLh-bf-1c3" secondAttribute="top" id="boO-ZZ-neH"/>
+                <constraint firstAttribute="trailing" secondItem="E6c-py-dvH" secondAttribute="trailing" id="brT-qF-Rdk"/>
+                <constraint firstAttribute="bottom" secondItem="E6c-py-dvH" secondAttribute="bottom" constant="48" id="kLb-BI-xJ4"/>
+                <constraint firstAttribute="trailing" secondItem="tnx-rc-95S" secondAttribute="trailing" id="yUU-ir-Rk1"/>
+            </constraints>
+            <point key="canvasLocation" x="122.5" y="161.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add" width="48" height="48"/>
+        <image name="addPressed" width="48" height="48"/>
+    </resources>
+</document>
